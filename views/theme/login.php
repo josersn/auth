@@ -8,9 +8,9 @@
                 <a href="<?= $router->route("auth.google"); ?>" class="btn btn-google">Google Login</a>
             </div>
 
-<!--            <div class="login_form_callback">-->
-<!--                --><?//= flash(); ?>
-<!--            </div>-->
+            <div class="login_form_callback">
+                <?= flash(); ?>
+            </div>
 
             <label>
                 <span class="field">E-mail:</span>
@@ -35,5 +35,5 @@
 </div>
 
 <?php $v->start("scripts"); ?>
-<script src="views/assets/js/form.js"></script>
+<script src="<?= asset("/js/form.js"); ?>"></script>
 <?php $v->end(); ?>

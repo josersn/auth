@@ -19,7 +19,7 @@ class Web extends Controller
     public function login():void
     {
         $head = $this->seo->optimize(
-            "Crie sua conta no site ",
+            "Faça Login para continuar sua conta no site ",
             "Site de login",
             $this->router->route("web.login"),
             "https://via.placeholder.com/1200x628/o984e3/FFFFFF/?text=Login"
@@ -28,6 +28,40 @@ class Web extends Controller
         echo  $this->view->render("theme/login", [
             "head" => $head
         ]);
+    }
+
+    public function register():void
+    {
+        $head = $this->seo->optimize(
+            "Crie sua conta no site ",
+            "Site de login",
+            $this->router->route("web.login"),
+            "https://via.placeholder.com/1200x628/o984e3/FFFFFF/?text=Register"
+        )->render();
+
+        $form_user = new \stdClass();
+        $form_user->first_name = null;
+        $form_user->last_name = null;
+        $form_user->email = null;
+
+        echo  $this->view->render("theme/register", [
+            "head" => $head,
+            "user" => $form_user
+        ]);
+    }
+
+    public function forgot():void
+    {
+
+    }
+
+    public function reset():void
+    {
+
+    }
+
+    public function error():void
+    {
 
     }
 }

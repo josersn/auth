@@ -8,12 +8,12 @@
 
     <?= $head; ?>
 
-    <link rel="stylesheet" href="views/assets/css/style.css"/>
-    <link rel="stylesheet" href="views/assets/css/form.css"/>
-    <link rel="stylesheet" href="views/assets/css/button.css"/>
-    <link rel="stylesheet" href="views/assets/css/message.css"/>
-    <link rel="stylesheet" href="views/assets/css/load.css"/>
-    <link rel="icon" type="image/png" href="../assets/images/favicon.png"/>
+    <link rel="stylesheet" href="<?= asset("/css/style.css"); ?>"/>
+    <link rel="stylesheet" href="<?= asset("/css/form.css"); ?>"/>
+    <link rel="stylesheet" href="<?= asset("/css/button.css"); ?>"/>
+    <link rel="stylesheet" href="<?= asset("/css/message.css"); ?>"/>
+    <link rel="stylesheet" href="<?= asset("/css/load.css"); ?>"/>
+    <link rel="icon" type="image/png" href="<?= asset("/images/favicon.png"); ?>"/>
 </head>
 <body>
 
@@ -27,8 +27,9 @@
 <main class="main_content">
     <?= $v->section("content"); ?>
 </main>
-<script src="views/assets/js/jquery-ui.js"></script>
-<script src="views/assets/js/jquery.js"></script>
+
+<script src="<?= asset("/js/jquery.js"); ?>"></script>
+<script src="<?= asset("/js/jquery-ui.js"); ?>"></script>
 <?= $v->section("scripts"); ?>
 
 </body>
