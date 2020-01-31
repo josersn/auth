@@ -8,7 +8,7 @@ define("SITE", [
     "desc" => "AUTH WITH php to plataform",
     "domain" => "localhost.com",
     "locale" => "pt_BR",
-    "root" => "https://www.localhost/upinside/"
+    "root" => "https://www.localhost/upinside"
 ]);
 /*
  * SITE MINIFY

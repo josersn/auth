@@ -29,7 +29,7 @@ function routeImg(string $param):string
  */
 function asset(string $path ): string
 {
-    return SITE['root']. "/views/assets/{$path}";
+    return SITE['root']. "/views/assets{$path}";
 }
 
 /**
